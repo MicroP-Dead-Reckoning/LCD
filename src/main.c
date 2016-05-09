@@ -188,7 +188,7 @@ void my_example(void const *argument){
 	  //The number of string lines avaialble is dependant on the font height:
 	  //A font height of 8 will result in 320 / 8 = 40 lines
     LCD_DisplayStringLine(LINE(1), (uint8_t*)"      Welcome to uP lab     ");
-    LCD_DisplayStringLine(LINE(2), (uint8_t*)"          FUCK YOU         ");
+    LCD_DisplayStringLine(LINE(2), (uint8_t*)"          Nice try!         ");
 	  
 	  //The stm32f429i_discovery_lcd.h file offers functions which allows to draw various shapes
 	  //in either border or filled with colour. You can draw circles, rectangles, triangles, lines,
@@ -196,11 +196,7 @@ void my_example(void const *argument){
 	  //colours.
 	  LCD_DrawLine(0, 32, 240, LCD_DIR_HORIZONTAL);
 	  LCD_DrawLine(0, 34, 240, LCD_DIR_HORIZONTAL);
-	  LCD_SetTextColor(LCD_COLOR_BLACK); 
-	  LCD_DrawFullCircle(100, 290, 20);
-	  LCD_DrawFullCircle(140, 290, 20);
-		LCD_DrawFullRect(100, 190, 40, 100);
-		LCD_DrawUniLine(100, 100, 230, 230);
+	  //LCD_SetTextColor(LCD_COLOR_BLACK); 
 //	  LCD_SetTextColor(LCD_COLOR_YELLOW); 
 //	  LCD_DrawFullCircle(120, 160, 80);
 //	  LCD_SetTextColor(LCD_COLOR_RED); 
